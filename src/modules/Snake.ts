@@ -40,7 +40,6 @@ class Snake {
       this.bodies[1] &&
       (this.bodies[1] as HTMLElement).offsetLeft === value
     ) {
-      // console.log('水平方向发生了掉头');
       // 如果发生了掉头，让蛇向反方向继续移动
       if (value > this.X) {
         // 如果新值value大于旧值X，则说明蛇在向右走，此时发生掉头，应该使蛇继续向左走
